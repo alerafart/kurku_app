@@ -33,7 +33,10 @@ export default function Home() {
             <h3>Video Title &rarr;</h3>
             
             <iframe src="https://player.vimeo.com/video/332293586?h=9792aea725&color=ffffff&badge=0" width="320" height="136" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-            <p>Video description Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias aut, repellat ipsum facere voluptate dicta obcaecati deserunt nobis suscipit eaque?</p>
+            <p>Video description </p>
+            <p>lorem50
+              
+            </p>
           </a>
 
           <a href="https://nextjs.org/learn" className="card">
