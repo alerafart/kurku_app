@@ -1,0 +1,24 @@
+
+.header {
+display: flex;
+justify-content: space-between;
+flex-direction: row;
+padding: 0.5rem;
+width: 100%;
+background-color: rgb(232, 229, 229);
+
+&__logo {
+    padding: 0.5rem;
+}
+&__nav{  
+    display: flex;
+    //padding: 0.5rem;
+    //justify-content: space-between;
+
+    &__link{
+        padding: 0.5rem;
+    }
+}
+    
+
+}

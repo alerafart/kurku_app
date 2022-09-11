@@ -1,5 +1,5 @@
-import Head from 'next/head'
-
+import Head from 'next/head';
+import Navbar from '../components/Navbar/Navbar';
 export default function Home() {
   return (
     <div className="container">
@@ -9,6 +9,7 @@ export default function Home() {
       </Head>
 
       <main>
+        <Navbar/>
         <h1 className="title">
           Welcome to <a href="https://nextjs.org">Kurku.tech!</a>
         </h1>
@@ -206,20 +207,7 @@ export default function Home() {
         }
       `}</style>
 
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
+      
     </div>
   )
 }
