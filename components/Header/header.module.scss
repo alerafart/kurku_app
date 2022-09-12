@@ -1,15 +1,8 @@
-
 .header {
-    margin-bottom: 2rem;
+margin-bottom: 2rem;
 display: flex;
 flex-direction: column;
-width: 100vw;
-height: min-content;
-// flex-shrink: 0;
-//flex-basis: 50px;
-// flex-direction: row;
-// padding: 0.5rem;
-// width: 100%;
+
  background-color: rgba(137, 146, 149, 0.679);
     &__iframe {
         display: flex;
@@ -18,26 +11,10 @@ height: min-content;
         align-self: center;
         text-align: center;
         width: 100vw;
-            height: 100vh;
-        &__video { 
-            
-            // text-align: center;
-            // justify-content: center;
+        height: auto;
+        @media (max-width:650px){
+            height: auto;
         }
     }
     
 }
-// &__iframe {
-//     display: flex;
-//     //height: 100vh;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-self: center;
-//     text-align: center;
-//     &__video { 
-//         width: 100vw;
-//         height: 100vh;
-//         // text-align: center;
-//         // justify-content: center;
-//     }
-// }
