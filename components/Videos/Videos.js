@@ -2,7 +2,7 @@ import styles from './videos.module.scss';
 
 export default function Videos() {
     return (
-      <div>Videos Component
+      <section className={styles.videos}>Videos Component
         
         <div className="grid">
           
@@ -39,7 +39,7 @@ export default function Videos() {
             </p>
           </a>
         </div>
-      </div>
+      </section>
                
     )
   }
