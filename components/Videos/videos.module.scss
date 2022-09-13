@@ -1,16 +1,18 @@
 .videos {
     background-color: rgba(137, 146, 149, 0.679);
     margin-bottom: 2rem;
-    display: flex;
-    flex-wrap: wrap;
+    // display: flex;
+    // flex-wrap: wrap;
     justify-content: center;
     width: 100vw;
     //align-self: center;
-    //display: grid;
-    // grid-template-columns: 1fr 1fr ;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 400px 400px 400px;
+          
     border: 1px solid rgb(247, 25, 25);
     @media(max-width:650px){
-        // grid-template-columns: 1fr;
+         grid-template-columns: 1fr;
         //width: min-content;
         //height: fit-content;
     }
@@ -20,8 +22,9 @@
     // justify-content: center;
     // 
         &__item { // with grid block container
+            border: 5px solid rgb(15, 147, 44); 
         display: flex;
-        margin: 1rem;
+        margin: 0.5rem;
         justify-content: center;
         align-content: center;
         align-items: center;
