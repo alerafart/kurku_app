@@ -2,22 +2,38 @@ import styles from './videos.module.scss';
 
 export default function Videos() {
     return (
-      <section className={styles.videos}>Videos Component
-        
-        <div className="grid">
+      <section className={styles.videos}>
+        <div className={styles.videos__item}>
+        <iframe className={styles.videos__item__vid}
+        // width="640" height="272"
+        src="https://www.youtube.com/embed/7AfqiVkhXPs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; fullscreen; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+        </div>
+        <div className={styles.videos__item}>
+        <iframe className={styles.videos__item__vid}
+        // width="640" height="272"
+        src="https://www.youtube.com/embed/7AfqiVkhXPs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; fullscreen; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+        </div>
+        <div className={styles.videos__item}>
+        <iframe className={styles.videos__item__vid}
+        // width="640" height="272"
+        src="https://www.youtube.com/embed/7AfqiVkhXPs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; fullscreen; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+        </div>
+        {/* <div className="grid">
           
-          <a href="https://nextjs.org/docs" className="card">
+          <a  className="card">
             <h3>Video Title &rarr;</h3>
             
-            <iframe src="https://player.vimeo.com/video/332293586?h=9792aea725&color=ffffff&badge=0" width="320" height="136" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen></iframe>
-            <p>Video description </p>
-            <p>lorem50
-              
-            </p>
+            <iframe width="320" height="136" src="https://www.youtube.com/embed/7AfqiVkhXPs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; fullscreen; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>Learn about Next.js in an interactive course with quizzes!</p>
+            
           </a>
 
           <a href="https://nextjs.org/learn" className="card">
             <h3>Learn &rarr;</h3>
+            <iframe width="320" height="136" src="https://www.youtube.com/embed/7AfqiVkhXPs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; fullscreen; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <p>Learn about Next.js in an interactive course with quizzes!</p>
           </a>
 
@@ -26,6 +42,7 @@ export default function Videos() {
             className="card"
           >
             <h3>Examples &rarr;</h3>
+            <iframe width="320" height="136" src="https://www.youtube.com/embed/7AfqiVkhXPs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; fullscreen; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <p>Discover and deploy boilerplate example Next.js projects.</p>
           </a>
 
@@ -34,11 +51,12 @@ export default function Videos() {
             className="card"
           >
             <h3>Deploy &rarr;</h3>
+            <iframe width="320" height="136" src="https://www.youtube.com/embed/7AfqiVkhXPs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; fullscreen; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <p>
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
-        </div>
+        </div> */}
       </section>
                
     )

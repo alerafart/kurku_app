@@ -1,9 +1,38 @@
 .videos {
     background-color: rgba(137, 146, 149, 0.679);
     margin-bottom: 2rem;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     justify-content: center;
-    align-items: center;
+    align-self: center;
+    grid-template-columns: 1fr 1fr ;
+    //width: 100%;
+    //width: fit-content;
+    border: 1px solid rgb(247, 25, 25);
+    @media(max-width:650px){
+        grid-template-columns: 1fr;
+    }
+    // text-align: center;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+        &__item { // with grid block container
+        display: flex;
+        margin: 1rem;
+        justify-content: center;
+        background-color: lightblue;
+        border: 5px solid rgb(252, 10, 244);
+        width: fit-content;
+        height: 300px; 
+        // align-self: center;   
+        &__vid{
+            border: 5px solid rgb(15, 147, 44);
+            width: 640px;
+	        height: 272px;
+            @media(max-width:650px){
+                
+            }
+            
+        }
+    }
 }
