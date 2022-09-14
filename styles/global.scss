@@ -2,11 +2,19 @@ html,
 body {
     padding: 0;
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-    sans-serif;
+    // font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    // Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+    // sans-serif;
 }
-
+h2 {
+  text-align: left;
+  // display: flex;
+  // justify-content: flex-start;
+  // position: relative;
+  // left: -40px;
+  // top: -50px;
+  font-family: "TradeGothicLTCom-BdCn20",Helvetica,Arial,sans-serif;
+}
 * {
     box-sizing: border-box;
 }

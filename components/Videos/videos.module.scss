@@ -1,14 +1,25 @@
+
 .videos {
+    &__h2{
+        // background-color: rgba(137, 146, 149, 0.679);
+        width: 95%;
+        text-align: left;
+        color: black;
+        font-family: Helvetica,Arial,sans-serif;
+        font-size: xx-large;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing:2rem;
+    }
     background-color: rgba(137, 146, 149, 0.679);
     margin-bottom: 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    width: 100vw;  
-
+    width: 100vw; 
+        
         &__item { 
         margin: 1rem;
-
         &__vid{
             width: 640px;
 	        height: 360px;
