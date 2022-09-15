@@ -23,10 +23,10 @@
         margin-bottom: 0;
         margin-top: 0;
         margin-top: 0.5rem;
-            @media(max-width: 650px){
-                width: 500px;
-                font-size: 1.5rem;
-            }
+        @media(max-width: 650px){
+        width: 500px;
+        font-size: 1.5rem;
+        }
     }
 
     &__p {
@@ -36,7 +36,7 @@
         margin: 0;
         
         @media(max-width: 650px){
-            width: 300px;
+        width: 300px;
         }
     }
 
