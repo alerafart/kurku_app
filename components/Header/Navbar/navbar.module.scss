@@ -1,4 +1,3 @@
-
 .header {
 display: flex;
 justify-content: space-between;
@@ -7,20 +6,16 @@ padding: 0.5rem;
 width: 100%;
 background-color: white;
 color: black;
-
+@media(max-width:650px){
+    justify-content: space-around;
+    }
     &__logo {
         width: 3rem;
-        &__wrapper {
-            // background-color: rgb(85, 154, 214);
-            width: 5%;
-        }
     }
     &__nav {  
         display: flex;
         justify-content: space-around;
-      //  background-color: antiquewhite;
-        width: 40%;
-        
+        padding: 0 1rem;
 
         &__link{
             display: flex;
@@ -29,7 +24,7 @@ color: black;
             align-self: center;
             text-align: center;
             padding: 0.5rem;
-            margin: 0 3rem;
+            margin: 0 1rem;
             border-radius: 5px ;
             background-color: black;
             color: white;
@@ -39,6 +34,12 @@ color: black;
             font-size: 1rem;
             height: 60%;
             width: 6rem;
+            @media(max-width: 650px){
+                width: 4rem;
+            }
+            @media(max-width: 520px){
+                max-width: min-content;
+            }
         }
         &__link:hover{
             font-size: 1.5rem;
@@ -47,7 +48,7 @@ color: black;
                 linear-gradient(
                 to right,
                 rgba(100, 200, 200, 1),
-                rgba(100, 200, 200, 1)
+                rgb(148, 100, 200)
                 ),
                 linear-gradient(
                 to right,
