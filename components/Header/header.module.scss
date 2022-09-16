@@ -42,11 +42,11 @@
         transition: 0.3s ease-in;
     }    
     &__p {
-        line-height:40px;
+        line-height:35px;
         font-size: max(2rem, 1vw);
         background-color: rgba(0, 0, 0, 0.5);
-        max-width: 50%;
-        padding: 0.08rem 0.5rem;
+        max-width: 60%;
+        padding: 0.3rem 0.5rem;
         align-self: center;
         position: absolute;  
         border-radius: 10px;
@@ -57,19 +57,22 @@
         }
         @media(max-width:650px){
         font-size: max(1.7rem, 1vw);
+        line-height:30px;
         max-width: 75%;
         top:50%;
         }
         @media(max-width:520px){
         font-size: max(1.5rem, 1vw);
+        line-height:30px;
         width: 90%;
         max-height: max-content;
         top:47%;
         }    
-        @media(max-width:410px){
-        font-size: 1rem;
+        @media(max-width:430px){
         font-size: max(1.05rem, 1vw);
-        width: 50%;
+        width: auto;
+        line-height:20px;
+        top:50%;
         } 
     }
     &__p:hover{
