@@ -21,15 +21,16 @@ export default function Contact_Form() {
 
   
   return (
-    <div>
-      <section className={styles.footer__contact}>
+    
+      <section className={styles.footer__content__contact}> section class footer__content__contact
         <form 
           action="/api/form"
           method="post"
           onSubmit={handleSubmit} 
-          className={styles.footer__contact__form}>
-            <label htmlFor="name">Name:</label>
+          className={styles.footer__content__contact__form}>
+            <label className={styles.footer__contact__form__label} htmlFor="name">Name:</label>
             <input
+              className={styles.footer__contact__form__input}
                 id="name"
                 type="text"
                 onChange={e => setName(e.target.value)}
@@ -60,7 +61,7 @@ export default function Contact_Form() {
   <button type="submit">Submit</button>
 </form> */}
 
-        </section>
-    </div>
+      </section>
+    
   );
 }

@@ -5,13 +5,39 @@ export default function Footer() {
       
       <footer className={styles.footer}>
         <div className={styles.footer__content}>
-          <section className={styles.footer__social}>
-          <form>
-              <label>subscrile to our NL</label>
-                <input>
-                </input>
-              
-            </form>
+          <section
+            className={styles.footer__content__social}>
+            <form className={styles.footer__content__social__form}>
+                <label>class content__social__form  subscrile to our NL</label>
+                  <input
+                    type='text'
+                    placeholder='enter email'>
+                  </input>
+              </form>
+            <div
+              className={styles.footer__content__social__network}>
+              content__social__network
+              <div>
+                <p className={styles.footer__content__social__network__p}> class network__p suivez nous
+                </p>
+                <img 
+                  src='vercel.svg'
+                  className={styles.footer__content__social__network__img}>
+                </img>
+                <img 
+                  src='vercel.svg'
+                  className={styles.footer__content__social__network__img}>
+                </img>
+                <img 
+                  src='vercel.svg'
+                  className={styles.footer__content__social__network__img}>
+                </img>
+                <img 
+                  src='vercel.svg'
+                  className={styles.footer__content__social__network__img}>
+                </img>
+              </div>
+            </div>
           </section>
           <Contact_Form />
           {/* <section className={styles.footer__contact}>

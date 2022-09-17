@@ -1,29 +1,63 @@
 .footer {
     background-color: #222;
-        flex-direction: column;
-        height: 250px;
+    border: 3px solid rgb(223, 4, 4);
+    flex-direction: column;
+    height: fit-content;
     &__content{
-        background-color: aquamarine;
+         background-color: rgb(114, 119, 119);
         display: flex;
+        justify-content: space-between;
         align-self: center;
-        height: 80%;
-        width: 100%;
+        height: auto;
+        width: 90%;
+        color:#f5f5f5 ;
+        padding: 5px;
+            &__social {
+                display: flex;
+                flex-direction: column;
+                border: 1px solid rgb(223, 4, 4);
+                width: 35rem;
+                width: 50%;
+                background-color: rgb(7, 80, 56);
 
-    }
-    &__social {
-        display: flex;
-        flex-direction: column;
-        border: 1px solid rgb(223, 4, 4);
-        width: 60%;
-        background-color: aquamarine;
-    }
-    &__contact {
-        border: 1px solid rgb(174, 10, 10);
-        height: 100%;
-        &__form{
-            
+                &__form {
+                    display: flex;
+                    flex-direction: column;
+                }
+                &__network {
+                    display: flex;
+                    flex-direction: column;
+                    background-color: rgb(67, 51, 107);
+                        &__p {
+                            color: blueviolet;
+                        }
+                        &__img {
+                            width: 40px;
+                            height: auto;
+                        }
+                }
+            }
+
+            &__contact {
+                border: 1px solid rgb(174, 10, 10);
+                width: 25rem;
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+                background-color: rgb(7, 80, 56);
+                
+                &__form{
+                display: flex;
+                flex-direction: column;
+                
+                background-color: aqua;
+                &__input {
+                    background-color: aqua;
+                }
+                }
         }
     }
+
     &__mentions {
         color:#f5f5f5 ;
     }
