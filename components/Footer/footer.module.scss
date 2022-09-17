@@ -1,35 +1,51 @@
 .footer {
     background-color: #222;
     border: 3px solid rgb(223, 4, 4);
+    display: flex;
     flex-direction: column;
+   // align-content: center;
+    // align-items: center;
     height: fit-content;
+    color:#f5f5f5 ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     &__content{
-         background-color: rgb(114, 119, 119);
         display: flex;
         justify-content: space-between;
-        align-self: center;
+        align-content: space-around;
+        align-items: center;
         height: auto;
+        margin: 1rem;
         width: 90%;
-        color:#f5f5f5 ;
         padding: 5px;
+        background-color: rgb(44, 44, 44);
             &__social {
                 display: flex;
                 flex-direction: column;
                 border: 1px solid rgb(223, 4, 4);
-                width: 35rem;
                 width: 50%;
-                background-color: rgb(7, 80, 56);
 
                 &__form {
                     display: flex;
                     flex-direction: column;
+                    
+                    &__label {
+                        width: 80%;
+                        padding: 0.2rem;
+                        margin: 1rem;
+                    }
+                    &__input {
+                        width: 80%;
+                        padding: 0.2rem;
+                        margin: 1rem;
+                    }
                 }
                 &__network {
                     display: flex;
                     flex-direction: column;
-                    background-color: rgb(67, 51, 107);
+
                         &__p {
-                            color: blueviolet;
+                            text-transform: uppercase;
+                            font-weight: bold;
                         }
                         &__img {
                             width: 40px;
@@ -44,21 +60,33 @@
                 width: 40%;
                 display: flex;
                 flex-direction: column;
-                background-color: rgb(7, 80, 56);
                 
-                &__form{
+                &__form {
                 display: flex;
                 flex-direction: column;
-                
-                background-color: aqua;
+                align-items: center;
+               // width: 80%;
+                border: 1px solid black;
+                &__label {
+                    width: auto;
+                }
                 &__input {
-                    background-color: aqua;
+                    width: 80%;
+                    padding: 0.1rem
+                }
+                &__button {
+                    width: 12%;
+                    border-radius: 1rem;
+                    background-color: green;
                 }
                 }
         }
     }
 
     &__mentions {
+        height: 2rem;
         color:#f5f5f5 ;
+        display: flex;
+        align-content: center;
     }
 }

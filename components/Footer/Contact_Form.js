@@ -14,41 +14,43 @@ export default function Contact_Form() {
       message,
     };
     console.log(data);
-    // const body = data.body;
-    // handler(data, body);
     
   };
 
   
   return (
     
-      <section className={styles.footer__content__contact}> section class footer__content__contact
+      <section className={styles.footer__content__contact}> 
+        <p>
+            
+        </p>
         <form 
           action="/api/form"
           method="post"
           onSubmit={handleSubmit} 
           className={styles.footer__content__contact__form}>
-            <label className={styles.footer__contact__form__label} htmlFor="name">Name:</label>
+            <label className={styles.footer__content__contact__form__label} htmlFor="name">Name:</label>
             <input
-              className={styles.footer__contact__form__input}
+              className={styles.footer__content__contact__form__input}
                 id="name"
                 type="text"
                 onChange={e => setName(e.target.value)}
             />
-            <label htmlFor="email">Email:</label>
+            <label className={styles.footer__content__contact__form__label}htmlFor="email">Email:</label>
             <input
+                className={styles.footer__content__contact__form__input}
                 id="email"
                 type="email"
                 onChange={e => setEmail(e.target.value)}
             />
-            <label htmlFor="message">Message:</label>
-            <textarea
+            <label className={styles.footer__content__contact__form__label} htmlFor="message">Message:</label>
+            <textarea className={styles.footer__content__contact__form__input}
                 id="message"
                 type="text"
                 rows="4"
                 onChange={e => setMessage(e.target.value)}
             />
-            <button type="submit">Send</button>
+            <button className= {styles.footer__content__contact__form__button} type="submit">Send</button>
             </form>
 
 {/* <form action="/api/form" method="post">

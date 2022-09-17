@@ -8,17 +8,18 @@ export default function Footer() {
           <section
             className={styles.footer__content__social}>
             <form className={styles.footer__content__social__form}>
-                <label>class content__social__form  subscrile to our NL</label>
+                <label className={styles.footer__content__social__form__label}><p className={styles.footer__content__social__network__p}>Subscribe to our NewsletterL</p> </label>
                   <input
+                  className={styles.footer__content__social__form__input}
                     type='text'
                     placeholder='enter email'>
                   </input>
               </form>
             <div
               className={styles.footer__content__social__network}>
-              content__social__network
+              
               <div>
-                <p className={styles.footer__content__social__network__p}> class network__p suivez nous
+                <p className={styles.footer__content__social__network__p}>Follow Us!
                 </p>
                 <img 
                   src='vercel.svg'
@@ -40,6 +41,7 @@ export default function Footer() {
             </div>
           </section>
           <Contact_Form />
+          
           {/* <section className={styles.footer__contact}>
             <form action="/send-data-here" method="post">
               <label for="first">First name:</label>
