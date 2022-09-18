@@ -1,5 +1,8 @@
 import styles from './footer.module.scss';
 import Contact_Form from './Contact_Form';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+//import '@fortawesome/fontawesome-svg-core/styles.css';
+
 export default function Footer() {
     return (
       
@@ -8,7 +11,11 @@ export default function Footer() {
           <section
             className={styles.footer__content__social}>
             <form className={styles.footer__content__social__form}>
-                <label className={styles.footer__content__social__form__label}><p className={styles.footer__content__social__network__p}>Subscribe to our NewsletterL</p> </label>
+                <label className={styles.footer__content__social__form__label}>
+                  <p className={styles.footer__content__social__network__p}>Subscribe to our Newsletter
+                  </p>
+                  <p><FontAwesomeIcon className={styles.footer__content__social__network__img} icon="fa-regular fa-envelope" /></p>
+                </label>
                   <input
                   className={styles.footer__content__social__form__input}
                     type='text'
@@ -21,22 +28,11 @@ export default function Footer() {
               <div>
                 <p className={styles.footer__content__social__network__p}>Follow Us!
                 </p>
-                <img 
-                  src='vercel.svg'
-                  className={styles.footer__content__social__network__img}>
-                </img>
-                <img 
-                  src='vercel.svg'
-                  className={styles.footer__content__social__network__img}>
-                </img>
-                <img 
-                  src='vercel.svg'
-                  className={styles.footer__content__social__network__img}>
-                </img>
-                <img 
-                  src='vercel.svg'
-                  className={styles.footer__content__social__network__img}>
-                </img>
+                <FontAwesomeIcon className={styles.footer__content__social__network__img} icon="fa-brands fa-facebook" />
+                <FontAwesomeIcon className={styles.footer__content__social__network__img} icon="fa-brands fa-linkedin" />
+                <FontAwesomeIcon className={styles.footer__content__social__network__img} icon="fa-brands fa-instagram" />
+                <FontAwesomeIcon className={styles.footer__content__social__network__img} icon="fa-brands fa-twitter" />
+                <FontAwesomeIcon className={styles.footer__content__social__network__img} icon="fa-brands fa-youtube" />
               </div>
             </div>
           </section>

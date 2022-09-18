@@ -1,5 +1,9 @@
 import { useState } from 'react';
 import styles from './footer.module.scss';
+//import '@fortawesome/fontawesome-svg-core/styles.css';
+//import '../node_modules/@fortawesome/fontawesome-svg-core/styles.css';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faFaceRelieved } from '@fortawesome/pro-solid-svg-icons';
 // import handler from '../../pages/api/form';
 export default function Contact_Form() {
   const [name, setName] = useState('');

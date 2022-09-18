@@ -30,13 +30,13 @@
                     
                     &__label {
                         width: 80%;
-                        padding: 0.2rem;
-                        margin: 1rem;
+                        // padding: 0.2rem;
+                        // margin: 1rem;
                     }
                     &__input {
-                        width: 80%;
+                        width: 40%;
                         padding: 0.2rem;
-                        margin: 1rem;
+                        margin: 0 1rem;
                     }
                 }
                 &__network {
@@ -46,9 +46,12 @@
                         &__p {
                             text-transform: uppercase;
                             font-weight: bold;
+                            padding: 0.2rem;
+                            margin: 1rem;
                         }
                         &__img {
-                            width: 40px;
+                            margin: 0 1rem;
+                            width: 30px;
                             height: auto;
                         }
                 }
