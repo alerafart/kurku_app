@@ -16,6 +16,7 @@ export default function Home() {
       <Head>
         <title>Kurku</title>
         <link rel="icon" href="/images/kurku_logo.png" />
+        <script src="https://kit.fontawesome.com/0be556c1af.js" crossorigin="anonymous"></script>
       </Head>
       <main>
         <Header/>
