@@ -10,7 +10,7 @@
 
     &__content{
         display: flex;
-       justify-content: space-between;
+    //    justify-content: flex-start;
         margin: 1rem;
         width: 80%;
         padding: 5px;
@@ -24,11 +24,9 @@
                 flex-direction: column;
                 justify-content: space-between; 
                 width: 40%;
+                height: auto;
                 margin-right: 1rem;
-                // align-items: stretch;
-                // align-content: stretch;
-                // align-self: stretch;
-                // border: 1px solid rgb(223, 4, 4);
+                
                 @media(max-width:750px){
                     width: 100%;
                     margin-right: 0;
@@ -37,10 +35,7 @@
                 &__form {
                     display: flex;
                     flex-direction: column;
-                    // height: 50%;
                     @media(max-width:750px){
-                    // justify-content: center;
-                    // align-content: center;
                     align-items: center;
 
                     }
@@ -53,8 +48,11 @@
 
                         }
                         &__p{
+                            width: 20%;
+                            margin: 0 1rem 1rem 0;
                             @media(max-width:750px){
                                 text-align: center;
+                                
                             }
                         }
                     }
@@ -62,7 +60,7 @@
                         flex-grow: 2;
                         max-width: 50%;
                         padding: 0.2rem;
-                        margin: 0 1rem;
+                        margin: 0 1rem 1rem 0;
                         @media(max-width:750px){
                             align-content: center;
                             width: 100%;
@@ -72,10 +70,6 @@
                 &__network {
                     display: flex;
                     flex-wrap: wrap;
-                    
-                    // flex-direction: column;
-                    // flex-grow: 1;
-                    // width: 50%;
                     align-content: center;
                     align-content: stretch;
                     @media(max-width:750px){
@@ -83,7 +77,7 @@
                         justify-content: center;
                         }
                         &__img {
-                            margin: 0 1rem;
+                            margin: 0 1rem 1rem 0;
                             width: 30px;
                             height: auto;
                             @media(max-width:750px){
@@ -98,8 +92,8 @@
                 width: 60%;
                 display: flex;
                 flex-direction: column;
-                // align-content: stretch;
                 height: 15rem;
+                height: fit-content;
             //    border: 1px solid rgb(174, 10, 10);
                @media(max-width:750px){
                 width: 100%;
@@ -157,6 +151,7 @@
 
     &__mentions {
         height: 2rem;
+        margin-top: 1rem;
         color:#f5f5f5 ;
         display: flex;
         align-content: center;

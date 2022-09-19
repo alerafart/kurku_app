@@ -22,7 +22,7 @@ export default function Footer() {
             </form>
             <div className={styles.footer__content__social__network}>
               <div>
-                <p>Follow Us!
+                <p className={styles.footer__content__social__form__label__p}>Follow Us!
                 </p>
                 <a href='#' target='_blank'>
                   <FontAwesomeIcon className={styles.footer__content__social__network__img} icon="fa-brands fa-facebook" />
