@@ -17,7 +17,7 @@ export default function Footer() {
               <input
               className={styles.footer__content__social__form__input}
                 type='text'
-                placeholder='enter email'>
+                placeholder='Enter Your Email Here'>
               </input>
             </form>
             <div className={styles.footer__content__social__network}>

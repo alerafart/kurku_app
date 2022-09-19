@@ -35,9 +35,7 @@ export default function Contact_Form() {
                   type="text"
                   onChange={e => setName(e.target.value)}
               />
-              {/* </div> */}
-
-              {/* <div className={styles.footer__content__contact__form__senderDiv}> */}
+              
               <label className={styles.footer__content__contact__form__label}htmlFor="email">Email:</label>
               <input
                   className={styles.footer__content__contact__form__input}
