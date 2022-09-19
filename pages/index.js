@@ -7,12 +7,16 @@ import Head from 'next/head';
 import Header from '../components/Header/Header';
 import Videos from '../components/Videos/Videos';
 import Footer from '../components/Footer/Footer';
+
+
+
 export default function Home() {
   return (
     <div className="container">
       <Head>
         <title>Kurku</title>
         <link rel="icon" href="/images/kurku_logo.png" />
+        <script src="https://kit.fontawesome.com/0be556c1af.js" crossorigin="anonymous"></script>
       </Head>
       <main>
         <Header/>
