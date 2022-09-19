@@ -52,7 +52,7 @@ export default function Contact_Form() {
               <textarea className={styles.footer__content__contact__form__textArea}
                   id="message"
                   type="text"
-                  rows="4"
+                  rows="8"
                   onChange={e => setMessage(e.target.value)}
               />
               <button className= {styles.footer__content__contact__form__button} type="submit">Send</button>

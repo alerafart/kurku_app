@@ -10,7 +10,7 @@ export default function Footer() {
             className={styles.footer__content__social}>
             <form className={styles.footer__content__social__form}>
               <label className={styles.footer__content__social__form__label}>
-                <p>Subscribe to our Newsletter
+                <p className={styles.footer__content__social__form__label__p}>Subscribe to our Newsletter
                 </p>
                 <FontAwesomeIcon className={styles.footer__content__social__network__img} icon="fa-regular fa-envelope" />
               </label>
