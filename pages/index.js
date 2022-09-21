@@ -7,7 +7,7 @@ import Head from 'next/head';
 import Header from '../components/Header/Header';
 import Videos from '../components/Videos/Videos';
 import Footer from '../components/Footer/Footer';
-
+import PageWithJSbasedForm from '../pages/js-form';
 
 
 export default function Home() {
@@ -21,7 +21,8 @@ export default function Home() {
       <main>
         <Header/>
         <Videos/>
-        <Footer/>
+        <PageWithJSbasedForm/>
+        {/* <Footer/> */}
       </main>      
     </div>
   )

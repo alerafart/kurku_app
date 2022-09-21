@@ -1,21 +1,40 @@
+import styles from '../components/Footer/footer.module.scss';
+import { useState } from 'react';
 export default function PageWithJSbasedForm() {
+
+  const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+
     // Handles the submit event on form submit.
     const handleSubmit = async (event) => {
       // Stop the form from submitting and refreshing the page.
-      event.preventDefault()
+     // event.preventDefault()
   
-      // Get data from the form.
+      // const data = {
+      //   name: event.target.name.value,
+      //   email: event.target.email.value,
+      //   message: event.target.message.value,
+      // }
+  
+  //const handleSubmit = e => {
+   // e.preventDefault();
       const data = {
-        name: event.target.name.value,
-        email: event.target.email.value,
-        message: event.target.message.value,
-      }
-  
+        name,
+        email,
+        message,
+      };
+    // console.log(data);
+    
+ // };
+      // Get data from the form.
+      
+      console.log(data);
       // Send the data to the server in JSON format.
-      const JSONdata = JSON.stringify(data)
+      const JSONdata = JSON.stringify(data);
   
       // API endpoint where we send form data.
-      const endpoint = '/api/form'
+      const endpoint = '/api/form';
   
       // Form the request for sending data to the server.
       const options = {
