@@ -3,14 +3,12 @@
 
 // Components
 import Head from 'next/head';
-// import Navbar from '../components/Navbar/Navbar';
 import Header from '../components/Header/Header';
 import Videos from '../components/Videos/Videos';
 import Footer from '../components/Footer/Footer';
 import {videolist} from '../data.json';
 
 export default function Home() {
-
   return (
     <div className="container">
       <Head>
@@ -22,7 +20,6 @@ export default function Home() {
         <Header/>
         <Videos videolist={videolist}/>
         <Footer/>
-        
       </main>      
     </div>
   )
