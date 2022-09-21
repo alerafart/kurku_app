@@ -7,10 +7,10 @@ import Head from 'next/head';
 import Header from '../components/Header/Header';
 import Videos from '../components/Videos/Videos';
 import Footer from '../components/Footer/Footer';
-
-
+import {videolist} from '../data.json';
 
 export default function Home() {
+
   return (
     <div className="container">
       <Head>
@@ -20,9 +20,23 @@ export default function Home() {
       </Head>
       <main>
         <Header/>
-        <Videos/>
+        <Videos videolist={videolist}/>
         <Footer/>
+        
       </main>      
     </div>
   )
+}
+
+// Fetching data from the JSON file
+import fsPromises from 'fs/promises';
+import path from 'path';
+export async function getStaticProps() {
+const filePath = path.join(process.cwd(), 'data.json');
+const jsonData = await fsPromises.readFile(filePath);
+const objectData = JSON.parse(jsonData);
+
+return {
+  props: objectData
+}
 }
