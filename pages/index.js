@@ -147,20 +147,21 @@ export default function Home() {
               // font-family: 'Archivo Narrow', sans-serif;
           }
           h1 {
+            font-weight: bold;
             // font-family: 'Archivo Narrow', sans-serif;
             // font-family: 'Barlow Condensed', sans-serif;
             //font-family: 'Oswald', sans-serif;
           }
           h2 {
             // font-family: 'Oswald', sans-serif;
-            // font-family: 'Archivo Narrow', sans-serif;
-            font-family: 'Barlow Condensed', sans-serif;
+            font-family: 'Archivo Narrow', sans-serif;
+            //font-family: 'Barlow Condensed', sans-serif;
             width: 95%;
             text-align: left;
             color: black;
           // font-family: Helvetica,Arial,sans-serif;
             font-size: 2.5rem;
-            font-weight: bold;
+          //  font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 1.5rem;
           }
@@ -218,7 +219,7 @@ export default function Home() {
               text-transform: uppercase;
               font-weight: bold;
               padding: 0.2rem;
-              margin:0 1rem;
+              
             }
             a {
               color: inherit;

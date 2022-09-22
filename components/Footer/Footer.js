@@ -11,20 +11,29 @@ export default function Footer() {
           <section
             className={styles.footer__content__social}>
             <form className={styles.footer__content__social__form}>
-              <label className={styles.footer__content__social__form__label}>
-                <p className={styles.footer__content__social__form__label__p}>Subscribe to our Newsletter
-                </p>
-                <FontAwesomeIcon className={styles.footer__content__social__network__img} icon={faEnvelope} />
+              <label className={styles.footer__content__social__form__label}>Subscribe to our Newsletter
+                {/* <p className={styles.footer__content__social__form__label__p}>
+                </p> */}
+                
+                {/* <FontAwesomeIcon className={styles.footer__content__social__network__img} icon={faEnvelope} /> */}
               </label>
+              
               <input
               className={styles.footer__content__social__form__input}
                 type='text'
                 placeholder='Enter Your Email Here'>
               </input>
+              <button
+                className={styles.footer__content__social__form__button}
+                type='submit'>
+                <FontAwesomeIcon
+                className={styles.footer__content__social__form__button__icon}
+                icon={faEnvelope} />
+              </button>
             </form>
             <div className={styles.footer__content__social__network}>
-              <div>
-                <p className={styles.footer__content__social__form__label__p}>Follow Us!
+                <p 
+                >Follow Us!
                 </p>
                 <a href='#' target='_blank'>
                   <FontAwesomeIcon className={styles.footer__content__social__network__img} icon={faFacebook} />
@@ -44,7 +53,6 @@ export default function Footer() {
                 <a href='#' target='_blank'>
                 <FontAwesomeIcon className={styles.footer__content__social__network__img} icon={faGithub} />
                 </a>
-              </div>
             </div>
           </section>
           <Contact_Form />

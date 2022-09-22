@@ -19,7 +19,7 @@ export default function Contact_Form() {
   return (
     
       <section className={styles.footer__content__contact}> 
-        <p className={styles.footer__content__social__form__label__p}>
+        <p >
             Contact Me
         </p>
         <form 
@@ -50,7 +50,7 @@ export default function Contact_Form() {
               <textarea className={styles.footer__content__contact__form__textArea}
                   id="message"
                   type="text"
-                  rows="12"
+                  rows="6"
                   onChange={e => setMessage(e.target.value)}
               />
               <button className= {styles.footer__content__contact__form__button} type="submit">Send</button>
