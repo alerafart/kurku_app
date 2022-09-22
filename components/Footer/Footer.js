@@ -1,8 +1,10 @@
 import styles from './footer.module.scss';
 import Contact_Form from './Contact_Form';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+import { faTwitter, faFacebook, faInstagram, faYoutube, faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 export default function Footer() {
+  
     return (
       <footer className={styles.footer}>
         <div className={styles.footer__content}>
@@ -12,7 +14,7 @@ export default function Footer() {
               <label className={styles.footer__content__social__form__label}>
                 <p className={styles.footer__content__social__form__label__p}>Subscribe to our Newsletter
                 </p>
-                <FontAwesomeIcon className={styles.footer__content__social__network__img} icon="fa-regular fa-envelope" />
+                <FontAwesomeIcon className={styles.footer__content__social__network__img} icon={faEnvelope} />
               </label>
               <input
               className={styles.footer__content__social__form__input}
@@ -25,19 +27,22 @@ export default function Footer() {
                 <p className={styles.footer__content__social__form__label__p}>Follow Us!
                 </p>
                 <a href='#' target='_blank'>
-                  <FontAwesomeIcon className={styles.footer__content__social__network__img} icon="fa-brands fa-facebook" />
+                  <FontAwesomeIcon className={styles.footer__content__social__network__img} icon={faFacebook} />
                 </a>
                 <a href='#' target='_blank'>
-                  <FontAwesomeIcon className={styles.footer__content__social__network__img} icon="fa-brands fa-linkedin" />
+                  <FontAwesomeIcon className={styles.footer__content__social__network__img} icon={faLinkedin} />
                 </a>
                 <a href='#' target='_blank'>
-                  <FontAwesomeIcon className={styles.footer__content__social__network__img} icon="fa-brands fa-instagram" />
+                  <FontAwesomeIcon className={styles.footer__content__social__network__img} icon={faInstagram} />
                 </a>
                 <a href='#' target='_blank'>
-                  <FontAwesomeIcon className={styles.footer__content__social__network__img} icon="fa-brands fa-twitter" />
+                  <FontAwesomeIcon className={styles.footer__content__social__network__img} icon={faTwitter} />
                 </a>
                 <a href='#' target='_blank'>
-                <FontAwesomeIcon className={styles.footer__content__social__network__img} icon="fa-brands fa-youtube" />
+                <FontAwesomeIcon className={styles.footer__content__social__network__img} icon={faYoutube} />
+                </a>
+                <a href='#' target='_blank'>
+                <FontAwesomeIcon className={styles.footer__content__social__network__img} icon={faGithub} />
                 </a>
               </div>
             </div>
