@@ -117,6 +117,7 @@
         align-self: center;
         width: 100vw;
         height: auto;
+        z-index: 2;
         @media (max-width:650px){
            // height: auto;
         }

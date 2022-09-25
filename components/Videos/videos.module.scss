@@ -47,6 +47,7 @@
         &__vid {
             width: 640px;
             height: 360px;
+            z-index: 2;
             @media(max-width:650px){
             width: 500px;
             height: 300px;

@@ -5,17 +5,17 @@ import Contact_Form from './Contact_Form';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faFacebook, faInstagram, faYoutube, faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons';
 {/* <FontAwesomeIcon icon="fa-solid fa-circle-chevron-up" /> */}
-import { faEnvelope, faSquareCaretUp } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope} from '@fortawesome/free-solid-svg-icons';
 export default function Footer() {
   
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  })
+//   useEffect(() => {
+//     window.addEventListener('scroll', handleScroll);
+//     return () => window.removeEventListener('scroll', handleScroll);
+//   })
 
-const handleScroll = () => {
-    console.log('scroll event', window.scrollY);
-  }
+// const handleScroll = () => {
+//     console.log('scroll event', window.scrollY);
+//   }
     return (
       <footer className={styles.footer}>
         <div className={styles.footer__content}>
@@ -75,9 +75,6 @@ const handleScroll = () => {
             <img src="/images/kurku_logo.png" alt="Vercel" className="logo" />
           </a>
         </div>
-        <a href='#header'  >
-          <FontAwesomeIcon id={styles.backToTop} icon={faSquareCaretUp} />
-        </a>
       </footer>        
     )
   }
