@@ -1,10 +1,21 @@
 import styles from './footer.module.scss';
+
+import { useEffect } from 'react';
 import Contact_Form from './Contact_Form';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faFacebook, faInstagram, faYoutube, faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+{/* <FontAwesomeIcon icon="fa-solid fa-circle-chevron-up" /> */}
+import { faEnvelope, faSquareCaretUp } from '@fortawesome/free-solid-svg-icons';
 export default function Footer() {
   
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  })
+
+const handleScroll = () => {
+    console.log('scroll event', window.scrollY);
+  }
     return (
       <footer className={styles.footer}>
         <div className={styles.footer__content}>
@@ -12,10 +23,6 @@ export default function Footer() {
             className={styles.footer__content__social}>
             <form className={styles.footer__content__social__form}>
               <label className={styles.footer__content__social__form__label}>Subscribe to our Newsletter
-                {/* <p className={styles.footer__content__social__form__label__p}>
-                </p> */}
-                
-                {/* <FontAwesomeIcon className={styles.footer__content__social__network__img} icon={faEnvelope} /> */}
               </label>
               
               <input
@@ -56,6 +63,7 @@ export default function Footer() {
             </div>
           </section>
           <Contact_Form />
+          
         </div>
         <div className={styles.footer__mentions}>
           <a
@@ -67,6 +75,9 @@ export default function Footer() {
             <img src="/images/kurku_logo.png" alt="Vercel" className="logo" />
           </a>
         </div>
+        <a href='#header'  >
+          <FontAwesomeIcon id={styles.backToTop} icon={faSquareCaretUp} />
+        </a>
       </footer>        
     )
   }
