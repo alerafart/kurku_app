@@ -1,13 +1,21 @@
 import styles from './footer.module.scss';
-
+import { useState } from 'react';
 import { useEffect } from 'react';
 import Contact_Form from './Contact_Form';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faFacebook, faInstagram, faYoutube, faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons';
-{/* <FontAwesomeIcon icon="fa-solid fa-circle-chevron-up" /> */}
 import { faEnvelope} from '@fortawesome/free-solid-svg-icons';
 export default function Footer() {
   
+  const [subscribe, setSubscribe] = useState('');
+  
+  const handleSubscribe = e => {
+    e.preventDefault();
+    const data = {
+      subscribe,
+    };
+    console.log( data.subscribe + ' subscribed to NL');
+  };
 //   useEffect(() => {
 //     window.addEventListener('scroll', handleScroll);
 //     return () => window.removeEventListener('scroll', handleScroll);
@@ -21,18 +29,24 @@ export default function Footer() {
         <div className={styles.footer__content}>
           <section
             className={styles.footer__content__social}>
-            <form className={styles.footer__content__social__form}>
+            <form className={styles.footer__content__social__form}
+              onSubmit={handleSubscribe}
+            >
               <label className={styles.footer__content__social__form__label}>Subscribe to our Newsletter
               </label>
               
               <input
               className={styles.footer__content__social__form__input}
-                type='text'
+                type='email'
+                id='email'
+                onChange={e =>setSubscribe(e.target.value)}
                 placeholder='Enter Your Email Here'>
               </input>
               <button
                 className={styles.footer__content__social__form__button}
-                type='submit'>
+                type='submit'
+                
+                >
                 <FontAwesomeIcon
                 className={styles.footer__content__social__form__button__icon}
                 icon={faEnvelope} />
