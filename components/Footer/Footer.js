@@ -1,6 +1,5 @@
 import styles from './footer.module.scss';
 import { useState } from 'react';
-import { useEffect } from 'react';
 import Contact_Form from './Contact_Form';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faFacebook, faInstagram, faYoutube, faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons';
@@ -16,14 +15,7 @@ export default function Footer() {
     };
     console.log( data.subscribe + ' subscribed to NL');
   };
-//   useEffect(() => {
-//     window.addEventListener('scroll', handleScroll);
-//     return () => window.removeEventListener('scroll', handleScroll);
-//   })
 
-// const handleScroll = () => {
-//     console.log('scroll event', window.scrollY);
-//   }
     return (
       <footer className={styles.footer}>
         <div className={styles.footer__content}>
@@ -79,16 +71,16 @@ export default function Footer() {
           <Contact_Form />
           
         </div>
-        <div className={styles.footer__mentions}>
+        {/* <div className={styles.footer__mentions}>
           <a
             href="https://app.kurku.tech"
             target="_blank"
             rel="noopener noreferrer"
           >
             Powered by{' '}
-            <img src="/images/kurku_logo.png" alt="Vercel" className="logo" />
+            <img src="/images/kurku_logo_2.jpeg" alt="Kurku logo" className="logo" />
           </a>
-        </div>
+        </div> */}
       </footer>        
     )
   }
