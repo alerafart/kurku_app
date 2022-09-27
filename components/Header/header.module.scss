@@ -81,7 +81,7 @@
     }  
     &__a {
         z-index: 5;
-        background-color: rgba(0, 0, 0, 0.6);
+        background-color: green;
         font-size: 2rem;
         text-transform: uppercase;
         font-weight: bold;
@@ -109,8 +109,9 @@
     }
     
     &__a:hover{
-        background-color:rgba(255, 255, 255, 0.700);
-        color:black;
+        background-color:white;
+        // font-weight: bold;
+        color:green;
         transition: 0.3s ease-in;
     }
     &__iframe {

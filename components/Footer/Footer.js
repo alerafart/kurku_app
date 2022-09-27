@@ -71,16 +71,6 @@ export default function Footer() {
           <Contact_Form />
           
         </div>
-        {/* <div className={styles.footer__mentions}>
-          <a
-            href="https://app.kurku.tech"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Powered by{' '}
-            <img src="/images/kurku_logo_2.jpeg" alt="Kurku logo" className="logo" />
-          </a>
-        </div> */}
       </footer>        
     )
   }
