@@ -58,17 +58,32 @@ export default function Home() {
               margin: 0;;
               font-family: 'Oswald', sans-serif;
               //background-color:red;
+              width:100%;
           }
           
           .container {
-            // width:100%;
-            
+            align-self: center;
+            width: 100vw;
+        height: auto;
+            // width:100vw;
+            width:100%;
+            flex: 1;
+            background-color:red;
             // min-height: 100vh;
             // padding: 0 0.5rem;
             // display: flex;
             // flex-direction: column;
             // justify-content: center;
             // align-items: center;
+          }
+          main {
+            //background-color:grey;
+            width: 100%;
+           // flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
           }
           h1 {
             font-weight: bold;
@@ -91,15 +106,7 @@ export default function Home() {
               box-sizing: border-box;
           }
 
-            main {
-              //background-color:grey;
-              //width: 100%;
-              flex: 1;
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
-              align-items: center;
-            }
+            
             
             footer {
               width: 100%;
