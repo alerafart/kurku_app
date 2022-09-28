@@ -13,7 +13,6 @@ export default function Contact_Form() {
       message,
     };
     console.log(data);
-    
   };
   
   return (

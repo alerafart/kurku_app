@@ -1,5 +1,4 @@
 .header {
-    margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
     background-color: rgba(137, 146, 149, 0.679);
@@ -81,7 +80,7 @@
     }  
     &__a {
         z-index: 5;
-        background-color: rgba(0, 0, 0, 0.6);
+        background-color: green;
         font-size: 2rem;
         text-transform: uppercase;
         font-weight: bold;
@@ -109,17 +108,18 @@
     }
     
     &__a:hover{
-        background-color:rgba(255, 255, 255, 0.700);
-        color:black;
+        background-color:white;
+        color:green;
         transition: 0.3s ease-in;
     }
     &__iframe {
         align-self: center;
-        width: 100vw;
+        // width: 100vw; same as below
+        width: 100%;
         height: auto;
         z-index: 2;
         @media (max-width:650px){
-           // height: auto;
+
         }
         @media(max-width:520px){
             
