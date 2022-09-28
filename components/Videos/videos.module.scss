@@ -6,15 +6,16 @@
 
     &__h2 {
         font-size: max(3rem, 1vw);
+        margin-left: 2rem;
         @media(max-width:650px){
             font-size: max(2rem, 1vw);
+            letter-spacing: 1rem;
             margin-top: 0;
             margin-bottom: 0;
             } 
     }
 
     &__h3 {
-      //  width: 640px;
         text-align: center;
         font-size: 1.8rem;
         margin-bottom: 0;
@@ -41,7 +42,6 @@
         align-items: center;
         margin: 0.2rem;
         margin-bottom: 1rem;
-        background-color: aqua;
         padding: 0;
         @media(max-width:650px){
             margin: 1rem 0;
