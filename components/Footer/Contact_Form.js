@@ -4,7 +4,8 @@ export default function Contact_Form() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-  
+  const [emailSent, setEmailSent] = useState(false);
+
   const handleSubmit = e => {
     e.preventDefault();
     const data = {
@@ -53,9 +54,18 @@ export default function Contact_Form() {
                   onChange={e => setMessage(e.target.value)}
               />
               <button className= {styles.footer__content__contact__form__button} type="submit">Send</button>
+
+            {emailSent && <div >
+                <alert id="alert" className="contact__message--confirm--alert"
+                severity="success">
+                  <span className="contact__message--confirm--alert--text">Thank you for your message, we will be in touch in no time!
+                  </span>
+                </alert>
+              </div>
+              }
+                
             </div>
         </form>
-            
       </section>
     
   );
