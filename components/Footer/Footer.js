@@ -6,13 +6,24 @@ import { faTwitter, faFacebook, faInstagram, faYoutube, faLinkedin, faGithub} fr
 import { faEnvelope} from '@fortawesome/free-solid-svg-icons';
 export default function Footer() {
   
-  const [subscribe, setSubscribe] = useState('');
+  const [subscribeEmailNl, setSubscribeEmailNl] = useState('');
+  const [isEmailSubscribed, setIsEmailSubscribed] = useState(false);
+  const [alertSubscribed, setAlertSubscribed] = useState(false);
+
   const handleSubscribe = e => {
     e.preventDefault();
     const data = {
-      subscribe,
+      subscribeEmailNl,
     };
+    
     console.log( data.subscribe + ' subscribed to NL');
+    setIsEmailSubscribed(true);
+    
+    setAlertSubscribed(true);
+    setTimeout(()=>{
+      setAlertSubscribed(false);    
+    }, 2000);
+    // setSubscribeEmailNl('');
   };
 
     return (
@@ -20,6 +31,7 @@ export default function Footer() {
         <div className={styles.footer__content}>
           <section
             className={styles.footer__content__social}>
+              
             <form className={styles.footer__content__social__form}
               onSubmit={handleSubscribe}
             >
@@ -30,19 +42,25 @@ export default function Footer() {
               className={styles.footer__content__social__form__input}
                 type='email'
                 id='email'
-                onChange={e =>setSubscribe(e.target.value)}
+                onChange={e =>setSubscribeEmailNl(e.target.value)}
                 placeholder='Enter Your Email Here'>
               </input>
               <button
                 className={styles.footer__content__social__form__button}
                 type='submit'
-                
                 >
                 <FontAwesomeIcon
                 className={styles.footer__content__social__form__button__icon}
                 icon={faEnvelope} />
               </button>
+              {alertSubscribed &&
+              <div id={styles.confirm}>
+                  <span >Thanks for subscribing to our Newsletter, no Spam promise!
+                  </span>
+              </div>
+            }
             </form>
+            
             <div className={styles.footer__content__social__network}>
                 <p 
                 >Follow Us!
