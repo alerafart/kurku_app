@@ -7,7 +7,6 @@ import { faEnvelope} from '@fortawesome/free-solid-svg-icons';
 export default function Footer() {
   
   const [subscribe, setSubscribe] = useState('');
-  
   const handleSubscribe = e => {
     e.preventDefault();
     const data = {
