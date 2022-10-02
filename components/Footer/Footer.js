@@ -18,9 +18,9 @@ export default function Footer() {
     console.log( data.subscribeEmailNl + ' subscribed to NL');
     setIsEmailSubscribed(true);  
     setAlertSubscribed(true);
-    setTimeout(()=>{
-      setAlertSubscribed(false);    
-    }, 2000);
+    // setTimeout(()=>{
+    //   setAlertSubscribed(false);    
+    // }, 2000);
     setSubscribeEmailNl('');
     // emptyInput();
   };
@@ -55,9 +55,9 @@ export default function Footer() {
                 icon={faEnvelope} />
               </button>
               {alertSubscribed &&
-              <div id={styles.confirm}>
-                  <span >Thanks for subscribing to our Newsletter, no Spam promise!
-                  </span>
+              <div className={styles.confirm__nl}>
+                  <p className={styles.confirm__nl__p}>Thanks for subscribing to our Newsletter, no Spam promise!
+                  </p>
               </div>
             }
             </form>

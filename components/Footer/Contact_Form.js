@@ -15,9 +15,9 @@ export default function Contact_Form() {
     };
     console.log(data);
     setEmailSent(true);
-    setTimeout(()=>{
-      setEmailSent(false);    
-    }, 2000);
+    // setTimeout(()=>{
+    //   setEmailSent(false);    
+    // }, 2000);
   };
   
   return (
@@ -62,14 +62,14 @@ export default function Contact_Form() {
             <button className= {styles.footer__content__contact__form__button} type="submit">Send
             </button>          
           </div>
-          
-      </form>
-      {emailSent &&
-        <div id={styles.confirm}>
-            <span >Thank you for your message, we will be in touch in no time!
-            </span>
+          {emailSent &&
+        <div className={styles.confirm__message}>
+            <p className={styles.confirm__message__p}>Thank you for your message, we will be in touch in no time!
+            </p>
         </div>
       }
+      </form>
+      
     </section>
   );
 }
