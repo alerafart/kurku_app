@@ -15,34 +15,35 @@ export default function Footer() {
     const data = {
       subscribeEmailNl,
     };
-    
-    console.log( data.subscribe + ' subscribed to NL');
-    setIsEmailSubscribed(true);
-    
+    console.log( data.subscribeEmailNl + ' subscribed to NL');
+    setIsEmailSubscribed(true);  
     setAlertSubscribed(true);
     setTimeout(()=>{
       setAlertSubscribed(false);    
     }, 2000);
-    // setSubscribeEmailNl('');
+    setSubscribeEmailNl('');
+    // emptyInput();
   };
 
+  // const emptyInput=function() {
+  //   setSubscribeEmailNl('');
+  // }
     return (
       <footer className={styles.footer}>
         <div className={styles.footer__content}>
           <section
             className={styles.footer__content__social}>
-              
             <form className={styles.footer__content__social__form}
               onSubmit={handleSubscribe}
             >
               <label className={styles.footer__content__social__form__label}>Subscribe to our Newsletter
               </label>
-              
               <input
               className={styles.footer__content__social__form__input}
                 type='email'
                 id='email'
                 onChange={e =>setSubscribeEmailNl(e.target.value)}
+                value={subscribeEmailNl}
                 placeholder='Enter Your Email Here'>
               </input>
               <button

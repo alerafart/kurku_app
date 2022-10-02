@@ -16,14 +16,8 @@ export default function Contact_Form() {
     console.log(data);
     setEmailSent(true);
     setTimeout(()=>{
-      setEmailSent(false);
-      
+      setEmailSent(false);    
     }, 2000);
-    // setTimeout(()=> {
-    //   setEmailSent(false,10000)
-    // })
-    // alert('Thank you for your message, we will be in touch in no time!');
-    
   };
   
   return (
@@ -42,6 +36,7 @@ export default function Contact_Form() {
               className={styles.footer__content__contact__form__input}
                 id="name"
                 type="text"
+                value={name}
                 onChange={e => setName(e.target.value)}
             />
             
@@ -50,6 +45,7 @@ export default function Contact_Form() {
                 className={styles.footer__content__contact__form__input}
                 id="email"
                 type="email"
+                value={email}
                 onChange={e => setEmail(e.target.value)}
             />
           </div>
@@ -59,14 +55,12 @@ export default function Contact_Form() {
             <textarea className={styles.footer__content__contact__form__textArea}
                 id="message"
                 type="text"
+                value={message}
                 rows="6"
                 onChange={e => setMessage(e.target.value)}
             />
             <button className= {styles.footer__content__contact__form__button} type="submit">Send
-            
-            </button>
-
-            
+            </button>          
           </div>
           
       </form>
