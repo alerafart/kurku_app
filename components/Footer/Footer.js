@@ -18,16 +18,12 @@ export default function Footer() {
     console.log( data.subscribeEmailNl + ' subscribed to NL');
     setIsEmailSubscribed(true);  
     setAlertSubscribed(true);
-    // setTimeout(()=>{
-    //   setAlertSubscribed(false);    
-    // }, 2000);
+    setTimeout(()=>{
+      setAlertSubscribed(false);    
+    }, 2000);
     setSubscribeEmailNl('');
-    // emptyInput();
   };
 
-  // const emptyInput=function() {
-  //   setSubscribeEmailNl('');
-  // }
     return (
       <footer className={styles.footer}>
         <div className={styles.footer__content}>
@@ -61,7 +57,6 @@ export default function Footer() {
               </div>
             }
             </form>
-            
             <div className={styles.footer__content__social__network}>
                 <p 
                 >Follow Us!

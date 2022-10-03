@@ -146,13 +146,13 @@
                     display: flex;
                     flex-direction: column;
                     width: 100%;
-
                 }
                 &__textAreaDiv {
                     display: flex;
                     flex-direction: column;
                     width: 100%;
                     margin-top: 1rem;
+
                 }
                 &__textArea {
                 width: 100%;
@@ -161,12 +161,11 @@
                 border-radius: 7px;
                 border: none;
                 font-size: 1rem;
-                
                 @media(max-width: 900px){
-                    width: 70%;
+                    width: 80%;
                 }
                 @media(max-width: 650px){
-                    width: 65%;
+
                 }
                 @media(max-width: 520px){
                     width: 100%;
@@ -176,7 +175,7 @@
                 &__button {
                     border: none;
                     width: 20%;
-                    padding: 0.5rem;;
+                    padding: 0.5rem;
                     margin-top: 0.5rem;
                     border-radius: 1rem;
                     background-color: green;
@@ -184,7 +183,7 @@
                     font-size: max(1rem, 1vw);
                     text-transform: uppercase;
                     @media(max-width:520px){
-                        width: 40%;
+                        min-width: 80px;
                     }
                     &:hover{
                         cursor:pointer;
@@ -198,32 +197,45 @@
 
 .confirm__message {
     background-color: green;
-    position: absolute;
-    top:60%;
-    left: 15%;
-    width: min-content;
-    min-width: 15rem;
+    width: fit-content;
     padding: 0.5rem;
-    margin-top: 0.5rem;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
     border-radius: 1rem;
     opacity: 0.8;
-    align-self: center;
+    position: absolute;
+    bottom:20%;
+    left: auto;
+    right: auto;
+    @media(max-width: 900px){
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 70%;
+    }
+    @media(max-width: 520px){
+        width: 90%;
+        bottom:15%;
+    }
     &__p{
         margin: 0;
         text-align: center;
+        
+        @media(max-width: 520px){
+            font-size: max(0.9rem, 1.5vw);
+        }
     }
 }
 
 .confirm__nl {
     background-color: green;
     left:0;
-    width: min-content;
+    width: fit-content;
     min-width: 15rem;
     padding: 0.5rem;
     margin-top: 0.5rem;
     border-radius: 7px;
     opacity: 0.8;
-
     &__p{
         margin: 0;
     }
@@ -233,5 +245,7 @@
         margin-bottom: 1rem;
         height: fit-content;
     }
-    
+    @media(max-width: 520px){
+        font-size: max(0.9rem, 1.5vw);
+    }
 }
