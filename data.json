@@ -10,7 +10,7 @@
             "id": 2,
             "title": "Video 2",
             "content": "This is the full content of Video 2",
-            "src":"https://www.youtube.com/embed/7AfqiVkhXPs"
+            "src":"https://www.youtube.com/embed/9sAeBdz34QU"
         },
         {
             "id": 3,
@@ -22,7 +22,7 @@
             "id": 4,
             "title": "Video 4",
             "content": "This is the full content of Video 4",
-            "src":"https://www.youtube.com/embed/-n-B0IKmSvQ"
+            "src":"https://www.youtube.com/embed/OvOH4zvrp9Y"
         }
     ]
 }

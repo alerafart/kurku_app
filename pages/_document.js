@@ -11,8 +11,8 @@ export default function Document() {
           rel="stylesheet"
         />
         <link
-            href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Barlow+Condensed:wght@300&family=Oswald:wght@300&display=swap" 
-            rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Barlow+Condensed:wght@300&family=Oswald:wght@300&display=swap" 
+          rel="stylesheet"
         />
       </Head>
       <body>
