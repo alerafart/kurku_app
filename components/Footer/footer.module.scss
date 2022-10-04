@@ -12,6 +12,9 @@
         width: 80%;
         padding: 5px;
         justify-content: space-between;
+        @media(max-width:520px){
+            width: 95%;
+        }
         
         @media(max-width:900px){
             flex-direction: column;
@@ -35,12 +38,9 @@
             &__form {
                  display: flex;
                  flex-wrap: wrap;
-                // @media(max-width:650px){
-                //     justify-content: space-between;
-                // }
+                 position: relative;
 
                 &__label { 
-                    width: 100%;
                     margin: 0 1rem 1rem 0;
                     @media(max-width:900px){
                         text-align: left;
@@ -59,6 +59,13 @@
                         align-content: center;
                         width: 100%;
                     }
+                    @media(max-width: 520px){
+                        max-width: 80%;
+                        margin:  1rem 0;
+                    }
+                    @media(max-width: 280px){
+                        max-width: 100%;
+                    }
                 }
                 &__button {
                     height: auto;
@@ -66,6 +73,9 @@
                     background-color: #222;
                     border: none;
                     margin: 0 0 1rem 0;
+                    @media(max-width: 520px){
+                        margin: 0;
+                    }
                     &__icon{
                         width: 30px;
                         height: auto;  
@@ -83,7 +93,7 @@
                 align-items: flex-end;
                 margin-top: 5rem;
                 @media(max-width:900px){
-                margin: 0;
+                    margin: 0;
                 }
                 & p {
                     width: 100%;
@@ -103,7 +113,6 @@
         }
          //right section //lower section in mobile
         &__contact {
-            // position: relative;
             display: flex;
             flex-direction: column;
             height: 15rem;
@@ -155,12 +164,12 @@
 
                 }
                 &__textArea {
-                width: 100%;
-                height: max-content;
-                padding: 0.6rem;
-                border-radius: 7px;
-                border: none;
-                font-size: 1rem;
+                    width: 100%;
+                    height: max-content;
+                    padding: 0.6rem;
+                    border-radius: 7px;
+                    border: none;
+                    font-size: 1rem;
                 @media(max-width: 900px){
                     width: 80%;
                 }
@@ -192,12 +201,10 @@
             }
         }
     }
-
 }
 
 .confirm__message {
     background-color: green;
-    width: fit-content;
     padding: 0.5rem;
     width: 90%;
     margin-left: 5%;
@@ -229,15 +236,31 @@
 
 .confirm__nl {
     background-color: green;
+    position: absolute;
     left:0;
-    width: fit-content;
-    min-width: 15rem;
-    padding: 0.5rem;
+    bottom:-60%;
+    max-width: 80%;
+    min-width: 70%;
+    padding: 0.3rem;
     margin-top: 0.5rem;
     border-radius: 7px;
+    text-align: center;
     opacity: 0.8;
+    @media(max-width: 900px){
+        width: fit-content; 
+        left:0;
+        bottom:-90%;
+        max-width: 80%;
+        min-width: 70%;
+    }
+    @media(max-width: 280px){
+        max-width: 100%; 
+    }
     &__p{
         margin: 0;
+        @media(max-width: 280px){
+            font-size: max(0.9rem, 1.5vw);
+        }
     }
     @media(max-width:900px){
         position: static;
