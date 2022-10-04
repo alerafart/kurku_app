@@ -34,14 +34,16 @@ export default function Contact_Form() {
             <label className={styles.footer__content__contact__form__label} htmlFor="name">Name:</label>
             <input
               className={styles.footer__content__contact__form__input}
-                id="name"
-                type="text"
-                value={name}
-                onChange={e => setName(e.target.value)}
+              required
+              id="name"
+              type="text"
+              value={name}
+              onChange={e => setName(e.target.value)}
             /> 
             <label className={styles.footer__content__contact__form__label}htmlFor="email">Email:</label>
             <input
                 className={styles.footer__content__contact__form__input}
+                required
                 id="email"
                 type="email"
                 value={email}
@@ -51,11 +53,12 @@ export default function Contact_Form() {
           <div className={styles.footer__content__contact__form__textAreaDiv}>
             <label className={styles.footer__content__contact__form__label} htmlFor="message">Message:</label>
             <textarea className={styles.footer__content__contact__form__textArea}
-                id="message"
-                type="text"
-                value={message}
-                rows="6"
-                onChange={e => setMessage(e.target.value)}
+              required
+              id="message"
+              type="text"
+              value={message}
+              rows="6"
+              onChange={e => setMessage(e.target.value)}
             />      
             <button className= {styles.footer__content__contact__form__button} type="submit">Send
             </button>                      

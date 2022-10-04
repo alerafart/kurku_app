@@ -35,7 +35,8 @@ export default function Footer() {
               <label className={styles.footer__content__social__form__label}>Subscribe to our Newsletter
               </label>
               <input
-              className={styles.footer__content__social__form__input}
+                className={styles.footer__content__social__form__input}
+                required
                 type='email'
                 id='email'
                 onChange={e =>setSubscribeEmailNl(e.target.value)}
@@ -45,7 +46,7 @@ export default function Footer() {
               <button
                 className={styles.footer__content__social__form__button}
                 type='submit'
-                >
+              >
                 <FontAwesomeIcon
                 className={styles.footer__content__social__form__button__icon}
                 icon={faEnvelope} />
