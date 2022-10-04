@@ -18,6 +18,9 @@ export default function Contact_Form() {
     setTimeout(()=>{
       setEmailSent(false);    
     }, 2000);
+    setName('');
+    setEmail('');
+    setMessage('');
   };
   
   return (
